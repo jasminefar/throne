@@ -1,0 +1,112 @@
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.throne {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.backrest {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.top-ornament {
+    position: absolute;
+    top: -10px;
+    width: 60px;
+    height: 30px;
+    background-color: #444;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.left-spike,
+.right-spike {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 50px;
+    background-color: #444;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.left-spike {
+    left: 10px;
+    transform: translateY(100%);
+}
+
+.right-spike {
+    right: 10px;
+    transform: translateY(100%);
+}
+
+.seat {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 40px;
+    background-color: #555;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.left-armrest,
+.right-armrest {
+    position: absolute;
+    bottom: 40px;
+    width: 20px;
+    height: 50px;
+    background-color: #444;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.left-armrest {
+    left: -10px;
+    transform: rotate(-15deg);
+}
+
+.right-armrest {
+    right: -10px;
+    transform: rotate(15deg);
+}
+
+.left-leg,
+.right-leg {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.left-leg {
+    left: 30px;
+}
+
+.right-leg {
+    right: 30px;
+}
